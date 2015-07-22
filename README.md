@@ -4,6 +4,6 @@ Bulkrename rename files in the current dir. Filenames are taken from the csv-lis
 1 csv-column: old filename  
 2 csv-column: new filename
 
-Usage:
+Usage:  
 bulkrename TABLE.CSV
 
