@@ -1,5 +1,6 @@
 # bulkrename
 Bulkrename renames files in the current dir. Old and new filenames are taken from the csv-list.
+Bulkrename is written on Go lang and compiled for Windows, Mac OS X, Linux.
 
 ### TABLE.CSV
 old-filename1,new-filename1  
