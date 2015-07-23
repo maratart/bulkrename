@@ -16,10 +16,13 @@ func rename(oldname, newname string) error {
 }
 
 func main() {
+
 	if len(os.Args) != 2 {
-		fmt.Println("bulkrename: rename files in the current dir. Filenames are taken from the csv-list.\n"+
-			"1 csv-column: old filename\n2 csv-column: new filename\n\nUsage:\n",
-			filepath.Base(os.Args[0]), "TABLE.CSV\n")
+		usageStr := "bulkrename: rename files in the current dir." +
+			" Filenames are taken from the csv-list.\n" +
+			"1 csv-column: old filename\n2 csv-column: new filename\n\nUsage:\n" +
+			filepath.Base(os.Args[0]) + "TABLE.CSV\n"
+		fmt.Println(usageStr)
 		return
 	}
 	tableCsv := os.Args[1]
